@@ -215,7 +215,7 @@ function App() {
     
   </div>
 </div>
-              <div className="app-controls">
+  <div className="app-controls">
                 <button className="app-control app-clo1"><FaEllipsisH /></button>
                 <button className="app-control" onClick={prevSong}>&laquo;</button>
                 <button className="app-control app-clo2" onClick={playPause}>
