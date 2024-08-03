@@ -51,21 +51,21 @@ body {
 
 .app-column-2 .app-tabs-container {
   flex-shrink: 0;
-  /* Prevents tabs and search from resizing */
+
 }
 
 .app-column-2 .app-songs-container {
   flex: 1;
   overflow-y: auto;
   scrollbar-width: none;
-  /* For Firefox */
+
   -ms-overflow-style: none;
-  /* For Internet Explorer and Edge */
+
 }
 
 .app-column-2 .app-songs-container::-webkit-scrollbar {
   display: none;
-  /* For Chrome, Safari, and Opera */
+ 
 }
 
 .app-column-3 {
@@ -87,17 +87,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Adjust as needed */
+  margin-top: 20px; 
 }
 
 .app-login-button {
-  width: 50px; /* Adjust the width as needed */
-  height: 50px; /* Make the height equal to the width to form a circle */
+  width: 50px; 
+  height: 50px; 
   border: none;
   background: url('login.jpg') no-repeat center center;
   background-size: 70px;
-  border-radius: 50%; /* This makes the button circular */
-  cursor: pointer; /* Make it look clickable */
+  border-radius: 50%; 
+  cursor: pointer; 
 }
 
 .app-songs {
