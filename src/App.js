@@ -50,11 +50,11 @@ function App() {
   useEffect(() => {
     if (currentSong) {
       audio.src = currentSong.url;
-      audio.currentTime = 0; // Reset currentTime to 0 for the new song
+      audio.currentTime = 0; 
       audio.play().catch(error => console.error('Playback error:', error));
       setIsPlaying(true);
       setBackgroundColor(currentSong.accent);
-      setCurrentTime(0); // Reset currentTime state to 0 for the new song
+      setCurrentTime(0); 
       audio.volume = volume;
 
       const handleTimeUpdate = () => {
@@ -68,7 +68,7 @@ function App() {
         audio.removeEventListener('timeupdate', handleTimeUpdate);
       };
     } else {
-      // If no current song, pause the audio
+     
       audio.pause();
     }
   }, [currentSong, audio, volume]);
